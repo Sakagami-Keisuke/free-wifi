@@ -13,20 +13,104 @@
 
 #map
 :javascript
-  let map
-  
-  function initMap(){
-    geocoder = new google.maps.Geocoder()
-  
+  var map;
+  var marker = [];
+  var infoWindow = [];
+  var markerData = [ 
+      {
+      name: 'TECH::EXPERT福岡',
+      lat: 33.592954,
+      lng: 130.404864,
+
+      }, {
+      name: 'エンジニアカフェ（天神）',
+      lat: 33.593152,
+      lng: 130.401884
+      }, {
+      name: 'スタートアップカフェ（大名）',
+      lat: 33.589162,
+      lng: 130.395307
+      }, {
+      name: 'プロント新天神町店',
+      lat: 33.590126,
+      lng: 130.398116
+      }, {
+      name: 'コーデュロイカフェ パルコ店',
+      lat: 33.59012,
+      lng: 130.398116
+      }, {
+      name: 'SIROUZU COFFE 警固店',
+      lat: 33.584114,
+      lng: 130.390572
+      }, {
+      name: 'タリーズコーヒー新天神店',
+      lat: 33.590074,
+      lng: 130.39707
+      }, {
+      name: 'シアトルズベストコーヒー天神昭和通店',
+      lat: 33.592324,
+      lng: 130.397139
+      }, {
+      name: 'スターバックスコーヒーメディアモール天神',
+      lat: 33.590907,
+      lng: 130.400564
+      }, {
+      name: 'コメダ珈琲店 福岡天神南店',
+      lat: 33.589295,
+      lng: 130.403634
+      }, {
+      name: 'VITO 中洲ゲイツ店',
+      lat: 33.593775,
+      lng: 130.406223
+      }, {
+      name: '福岡天狼院（今泉）',
+      lat: 33.585459,
+      lng: 130.400186
+      }
+
+
+
+
+
+
+  ];  
+
+
+  function initMap() {
+    var mapLatLng = new google.maps.LatLng({lat: markerData[0]['lat'], lng: markerData[0]['lng']}); 
     map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 33.590528, lng: 130.398868},
-      zoom: 16,
-    });
+    center: mapLatLng, 
+    zoom: 15 
+   });
+ 
+      for (var i = 0; i < markerData.length; i++) {
+          markerLatLng = new google.maps.LatLng({lat: markerData[i]['lat'], lng: markerData[i]['lng']}); 
+          marker[i] = new google.maps.Marker({ 
+          position: markerLatLng, 
+              map: map 
+          });
   
-    marker = new google.maps.Marker({
-      position:  {lat: 33.590528, lng: 130.398868},
-      map: map
+          infoWindow[i] = new google.maps.InfoWindow({ 
+            content: '<div class="sample">' + markerData[i]['name'] + '</div>' 
+          });
+  
+          markerEvent(i); 
+      }
+  
+        marker[0].setOptions({
+            icon: {
+            url: markerData[0]['icon']
+          }
+        });
+  }
+  function markerEvent(i) {
+      marker[i].addListener('click', function() { 
+      infoWindow[i].open(map, marker[i]); 
     });
   }
 
+ 
+  
+
 %script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkWxy5B306z7lqHjbVdWbPyHWSSUlJTmY&callback=initMap"}
+
