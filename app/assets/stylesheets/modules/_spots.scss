@@ -1,91 +1,141 @@
 * {
   box-sizing: border-box;
 }
+
+html{font-size: 10px;}
 // ----------------------------------------------------------------
 .header{
-  height: 150px;
+  height: 15rem;
   width: 100vw;
-  padding-left: 10px;
-  padding-top: 10px;
-  background-color: rgb(235, 243, 225);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-color: rgb(245, 250, 239);
 }
   .title{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .subtitle{
-    font-size: 10px;
+    font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
     a{
       color: black;
-      font-size: 35px;
+      font-size: 3.5rem;
       font-weight: bold;
       text-decoration: none;
     }
   .menu{
-    margin-top: 20px;
+    margin-top: 1.8rem;
     list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
+    margin-right: 30rem;
   }
+
+    li{
+      padding: 0.5em 1em;
+      font-size: 2rem;
+      background: -moz-linear-gradient(#ffb03c, #ff708d);
+      background: -webkit-linear-gradient(#ffb03c, #ff708d);
+      background: linear-gradient(to right, #ffb03c, #ff708d);
+      color: #FFF;
+    }
+
+    
     p{
       color:black;
-      font-size: 22px;
+      font-size: 2rem;
     }
-  .box{
-    height: 70px;
-    line-height: 30px;
-    padding: 0 10px;
-    border: solid 1px black;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    }
-      i{
-        font-size: 10px;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+  // .box{
+  //   height: 70px;
+  //   line-height: 30px;
+  //   padding: 0 10px;
+  //   border: solid 1px black;
+  //   position: absolute;
+  //   right: 40px;
+  //   top: 40px;
+  //   }
+  //     i{
+  //       font-size: 10px;
+  //       color: black;
+  //       font-family: Verdana, Geneva, Tahoma, sans-serif;
         
-      }
+  //     }
 // ----------------------------------------------------------------
 
 .side{
- width: 500px;
- color: blue;
- background-color: rgb(219, 230, 205);
+ width: 40rem;
+ background-color: rgb(233, 245, 239);
  float: left;
- height: calc(100vh - 180px);
+ height: calc(100vh - 18rem);
  overflow: scroll;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
   .side-box{
     margin: auto ;
-    height: calc( 100% - 40px);
-    width: calc( 100% - 40px );
-    border: solid 1px black;
+    height: calc( 100% - 4rem );
+    width: calc( 100% - 4rem );
+    
   }
   h2{
-    font-size: 20px;
+    color: blue;
+    font-size: 2rem;
     text-align: center;
-    line-height: 30px;
+    line-height: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  dl{
-    
 
-  }
+    dl{
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    .bar{
+      font-size: 1rem;
+    }
+    // .title{
+    //   font-size: 2rem;
+    // }
+    .price{
+      font-size: 2rem;
+    }
+    .power{
+      font-size: 2rem;
+    }  
+    .mood{
+      font-size: 2rem;
+    }
 
+    .spot-box {
+      position: relative;
+      margin: 2em 0;
+      padding: 25px 10px 7px;
+      border: solid 2px #FFC107;
+    }
+    .spot-box .title {
+      position: absolute;
+      display: inline-block;
+      top: -2px;
+      left: -2px;
+      padding: 0 9px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 17px;
+      background: #FFC107;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .spot-box p {
+      margin: 0; 
+      padding: 0;
+    }
 
-
-  a{}
-
-    dl{}
-    dt{}
       p {
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
@@ -93,44 +143,67 @@
 
 // ----------------------------------------------------------------
 
-.main{
-  height: calc( 100vh - 180px );
-  width: calc( 100vw - 500px );
-  float: right;
-  background-color: rgb(206, 223, 185);
+// .main{
+//   height: calc( 100vh - 18rem );
+//   width: calc( 100vw - 50rem );
+//   float: right;
+//   background-color: rgb(206, 223, 185);
+// }
+//   h3{
+//     font-size: 2rem;
+//     color: black;
+//     text-align: center;
+//     line-height: 3rem;
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//   }
+
+//   .map{
+//     margin: auto ;
+//     height: calc( 100% - 6rem );
+//     width: calc( 100% - 4rem );
+//     border: solid 0.1rem black;
+//     background-color: rgb(190, 168, 219);
+//     position: relative;
+//   }
+
+/* 初期化用 */
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
-  h3{
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    line-height: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+ 
+/* マップ用のCSS */
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
 
-  .map{
-    margin: auto ;
-    height: calc( 100% - 60px);
-    width: calc( 100% - 40px );
-    border: solid 1px black;
-    background-color: rgb(190, 168, 219);
 
-  }
 
 // ----------------------------------------------------------------
 
 .footer{
-  height: 30px;
+  height: 5rem;
   width: 100vw;
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 0.5rem;
   float: left;
-  bottom: 0px;
+  bottom: 0rem;
 }
   
-  span{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-  }
+  .footer i{
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.8rem;
+   }

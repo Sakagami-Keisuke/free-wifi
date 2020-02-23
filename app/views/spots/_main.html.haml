@@ -1,5 +1,32 @@
 .main
-  %h3 Googlemap
-  .map
-    / 地図
-    #map.index_map{:style => "position: relative; overflow: hidden;"}
+
+
+:css
+  #map{
+    height: calc( 100vh - 200px);
+    width: calc( 100vw - 400px);
+    float: right;
+    position:absolute;
+    top:150px;
+    left:400px;
+  }
+
+#map
+:javascript
+  let map
+  
+  function initMap(){
+    geocoder = new google.maps.Geocoder()
+  
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 33.590528, lng: 130.398868},
+      zoom: 16,
+    });
+  
+    marker = new google.maps.Marker({
+      position:  {lat: 33.590528, lng: 130.398868},
+      map: map
+    });
+  }
+
+%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkWxy5B306z7lqHjbVdWbPyHWSSUlJTmY&callback=initMap"}
