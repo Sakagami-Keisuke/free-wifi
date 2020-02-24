@@ -3,6 +3,13 @@
 }
 
 html{font-size: 10px;}
+
+@font-face {
+  font-family: '1';
+  src: font-url('NotoSerifJP-ExtraLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 // ----------------------------------------------------------------
 .header{
   height: 15rem;
@@ -12,29 +19,29 @@ html{font-size: 10px;}
   background-color: rgb(245, 250, 239);
 }
   .title{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  //  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   //  font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  font-family: '1';
   }
 
   .subtitle{
     font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: '1';
   }
 
-    a{
+    .header a{
       color: black;
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-weight: bold;
       text-decoration: none;
     }
   .menu{
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
     list-style: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: '1';
     display: flex;
     justify-content: space-between;
-    margin-right: 30rem;
+    margin-right: 25rem;
   }
 
     li{
@@ -65,7 +72,7 @@ html{font-size: 10px;}
   //     i{
   //       font-size: 10px;
   //       color: black;
-  //       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  //       font-family: '1';
         
   //     }
 // ----------------------------------------------------------------
@@ -76,7 +83,7 @@ html{font-size: 10px;}
  float: left;
  height: calc(100vh - 18rem);
  overflow: scroll;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-family: '1';
 }
   .side-box{
     margin: auto ;
@@ -89,7 +96,7 @@ html{font-size: 10px;}
     font-size: 2rem;
     text-align: center;
     line-height: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: '1';
   }
 
     dl{
@@ -99,15 +106,21 @@ html{font-size: 10px;}
     .bar{
       font-size: 1rem;
     }
-    // .title{
-    //   font-size: 2rem;
-    // }
-    .price{
+    img.image{
+      height: 8rem;
+      width: 11rem;
+    }
+
+    .charge{
       font-size: 2rem;
     }
     .power{
       font-size: 2rem;
     }  
+    .hour{
+      font-size: 2rem;
+    }  
+
     .mood{
       font-size: 2rem;
     }
@@ -139,7 +152,7 @@ html{font-size: 10px;}
       p {
         font-size: 2rem;
         font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: '1';
       }
  
 
@@ -148,7 +161,7 @@ html{font-size: 10px;}
 
 
 .footer{
-  height: 5rem;
+  height: 4rem;
   width: 100vw;
   background-color: #333;
   color: #fff;
@@ -160,6 +173,6 @@ html{font-size: 10px;}
   
   .footer i{
       color: white;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 0.8rem;
+      font-family: '1';
+      font-size: 1.2rem;
    }
