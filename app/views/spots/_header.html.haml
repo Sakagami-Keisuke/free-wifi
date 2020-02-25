@@ -15,9 +15,11 @@
       雰囲気 静か/賑やか
     
 
-  -# .box
-  -#   .text
-  -#     %i 更新日
-  -#   .date
-  -#     %i 2020.2.20
+  .box
+    = link_to 'アカウント編集', edit_user_path(current_user)
+
+    -# %a{:href => edit_user_path(current_user)} user編集
+    
+ 
+
 
