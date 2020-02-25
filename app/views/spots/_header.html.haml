@@ -1,19 +1,21 @@
 
 .header
   .title
-    %a{:href => "root_path"}Catch The Wave!!
-  .subtitle 2020年版 フリーWiFiスポット情報アプリ
+    %a{:href => "root_path"}For NomaDist
+  .subtitle 2020年版 ノマド向けフリーWiFiスポット情報アプリ
+  
   .menu
     %ul
     %li.area
-      エリア 天神
+      福岡 天神 エリア
     %li.charge
-      料金 無料/有料
-    %li.power
-      電源 あり/なし
+      料金  無料 / 有料
+    -# %li.power
+    -#   電源 あり/なし
     %li.mood
-      雰囲気 静か/賑やか
+      雰囲気  静か / 賑やか
     
+  %img.cat{:src => "/image.jpg"}/
 
   .box
     = link_to 'アカウント編集', edit_user_path(current_user)

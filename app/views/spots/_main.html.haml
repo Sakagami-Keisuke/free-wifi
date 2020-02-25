@@ -31,7 +31,6 @@
       name: 'TECH::EXPERT福岡<br><img src="/demo0.jpg"class=image >" ',
       lat: 33.592954,
       lng: 130.404864,
-
       }, {
       name: '[無料]エンジニアカフェ（天神）<br><img src="/demo1.jpg"class=image > ',
       lat: 33.593152,
@@ -107,15 +106,15 @@
       }
 
 
-
-
   ];  
+
+
 
 
   function initMap() {
     var mapLatLng = new google.maps.LatLng({lat: markerData[0]['lat'], lng: markerData[0]['lng']}); 
     map = new google.maps.Map(document.getElementById('map'), {
-    center: mapLatLng, 
+    center:  {lat: 33.590907,lng: 130.400564}, 
     zoom: 16
    });
  

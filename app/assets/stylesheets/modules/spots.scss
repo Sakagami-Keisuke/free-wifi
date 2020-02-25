@@ -14,19 +14,21 @@ html{font-size: 10px;}
 .header{
   height: 15rem;
   width: 100vw;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-top: 1rem;
-  background-color: rgb(245, 250, 239);
+  background-color: white;
 }
   .title{
   //  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   //  font-family: Georgia, 'Times New Roman', Times, serif;
   font-family: '1';
+
   }
 
   .subtitle{
     font-size: 1rem;
     font-family: '1';
+
   }
 
     .header a{
@@ -35,22 +37,27 @@ html{font-size: 10px;}
       font-weight: bold;
       text-decoration: none;
     }
+
   .menu{
-    margin-top: 1.5rem;
+    
     list-style: none;
     font-family: '1';
     display: flex;
-    justify-content: space-between;
-    margin-right: 25rem;
+    justify-content: space-around;
+    margin-right: 10rem;
+    margin-left: 40rem;
   }
 
+
     li{
+      border-radius: 30px;
       padding: 0.5em 1em;
       font-size: 2rem;
       background: -moz-linear-gradient(#ffb03c, #ff708d);
       background: -webkit-linear-gradient(#ffb03c, #ff708d);
       background: linear-gradient(to right, #ffb03c, #ff708d);
       color: #FFF;
+      
     }
 
     
@@ -59,28 +66,41 @@ html{font-size: 10px;}
       font-size: 2rem;
     }
 
+  .cat{
+    height: 13.6rem;
+    width: 13.6rem;
+    line-height: 2rem;
+    position: absolute;
+    left: 30rem;
+    top: 1rem;
+    z-index: 1;
+  }
+
 
   .box a{
     height: 1rem;
     line-height: 1rem;
-    padding: 0 10px;
+    padding: 1rem 1rem 1rem 1rem;
     border: solid 1px black;
     position: absolute;
     right: 4rem;
     top: 4rem;
     font-size: 1rem;
+    font-family: '1';
     }
-  //     i{
-  //       font-size: 10px;
-  //       color: black;
-  //       font-family: '1';
-        
-  //     }
+
+
 // ----------------------------------------------------------------
 
 .side{
  width: 40rem;
- background-color: rgb(233, 245, 239);
+//  background-color: rgb(245, 230, 230);
+
+ background: -moz-linear-gradient(#ffb03c, #ff708d);
+ background: -webkit-linear-gradient(#ffb03c, #ff708d);
+ background: linear-gradient(to right, #ffb03c, #ff708d);
+
+
  float: left;
  height: calc(100vh - 18rem);
  overflow: scroll;
@@ -130,7 +150,7 @@ html{font-size: 10px;}
       position: relative;
       margin: 2em 0;
       padding: 25px 10px 7px;
-      border: solid 2px #FFC107;
+      border: solid 2px brown;
     }
     .spot-box .title {
       position: absolute;
@@ -141,7 +161,7 @@ html{font-size: 10px;}
       height: 25px;
       line-height: 25px;
       font-size: 17px;
-      background: #FFC107;
+      background: brown;
       color: #ffffff;
       font-weight: bold;
     }
