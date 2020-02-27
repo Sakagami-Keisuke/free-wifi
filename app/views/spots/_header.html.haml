@@ -20,9 +20,11 @@
   %img.wifi{:src => "/wifi.png"}/
 
   .box
-    = link_to 'アカウント編集', edit_user_path(current_user)
 
-    -# %a{:href => edit_user_path(current_user)} user編集
+    -# = link_to 'アカウント編集', edit_user_path(current_user)
+
+  %a{:href => edit_user_path(current_user)} 
+    %img.github{ :src => "/github.png"}/
     
  
 

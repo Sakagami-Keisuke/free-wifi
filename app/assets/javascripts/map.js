@@ -101,10 +101,10 @@
           var myLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                             // マップオプションを変数に格納
           var mymapOptions = {
-            zoom : 16,                 // 拡大倍率
+            zoom : 15,                 // 拡大倍率
             center : myLatLng,         // 緯度・経度
             maxZoom:20,                // 最大ズームの設定
-            minZoom: 15,               // 最小ズームの設定
+            minZoom: 14,               // 最小ズームの設定
             scaleControl:true,         // 距離スケール表示
           };
 
@@ -138,7 +138,7 @@
             marker[i] = new google.maps.Marker({ 
               position: markerLatLng, 
               map: map,                 // 表示先の地図の種類
-              animation: google.maps.Animation.BOUNCE,   // アイコンの動き DROP
+              animation: google.maps.Animation.DROP,   // アイコンの動き DROP  BOUNCE
               clickable: true,          // クリックできるようにする
               draggable: false,         // ドラッグできないようにする
               zIndex:5,                 // 前面表示の度合い
