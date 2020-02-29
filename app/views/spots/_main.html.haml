@@ -1,0 +1,38 @@
+.main
+
+
+
+%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkWxy5B306z7lqHjbVdWbPyHWSSUlJTmY&callback=initMap"}
+:css
+  #map{
+    height: calc( 100vh - 200px);
+    width: calc( 100vw - 400px);
+    float: right;
+    position:absolute;
+    top:150px;
+    left:400px;
+  
+  }
+  .image{
+    height:6rem;
+    width:7rem;
+    
+  }
+
+    .sample {
+     font-family: '1';  
+    }
+
+
+
+
+
+#map
+:javascript
+
+
+%body
+  %script{:src => "map.js"}
+  
+
+

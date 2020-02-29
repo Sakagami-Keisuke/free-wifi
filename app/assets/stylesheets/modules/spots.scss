@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+html{font-size: 10px;}
+
+@font-face {
+  font-family: '1';
+  src: font-url('NotoSerifJP-ExtraLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+// ----------------------------------------------------------------
+.header{
+  height: 15rem;
+  width: 100vw;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  background-color: white;
+}
+  .title{
+  //  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  //  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: '1';
+
+  }
+
+  .subtitle{
+    font-size: 1rem;
+    font-family: '1';
+
+  }
+
+    .header a{
+      color: black;
+      font-size: 4rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+  .menu{
+    
+    list-style: none;
+    font-family: '1';
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10rem;
+    margin-left: 40rem;
+  }
+
+
+    li{
+      border-radius: 30px;
+      padding: 0.5em 1em;
+      font-size: 2rem;
+      background: -moz-linear-gradient(#ffb03c, #ff708d);
+      background: -webkit-linear-gradient(#ffb03c, #ff708d);
+      background: linear-gradient(to right, #ffb03c, #ff708d);
+      color: #FFF;
+      
+    }
+
+    
+    p{
+      color:black;
+      font-size: 2rem;
+    }
+
+  .cat{
+    height: 13.6rem;
+    width: 13.6rem;
+    line-height: 2rem;
+    position: absolute;
+    left: 32rem;
+    top: 1rem;
+    z-index: 1;
+  }
+
+  .wifi{
+    height: 5.5rem;
+    width: 5.5em;
+    line-height: 2rem;
+    position: absolute;
+    left: 29rem;
+    top: 1rem;
+    z-index: 1;
+  }
+
+
+
+  .box a{
+    height: 1rem;
+    line-height: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: solid 1px black;
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    font-size: 1rem;
+    font-family: '1';
+    }
+
+    .github {
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      z-index: 1;
+    }
+
+
+// ----------------------------------------------------------------
+
+.side{
+ width: 40rem;
+//  background-color: rgb(245, 230, 230);
+
+ background: -moz-linear-gradient(#ffb03c, #ff708d);
+ background: -webkit-linear-gradient(#ffb03c, #ff708d);
+ background: linear-gradient(to right, #ffb03c, #ff708d);
+
+
+ float: left;
+ height: calc(100vh - 18rem);
+ overflow: scroll;
+ font-family: '1';
+}
+  .side-box{
+    margin: auto ;
+    height: calc( 100% - 4rem );
+    width: calc( 100% - 4rem );
+    
+  }
+  h2{
+    color: blue;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    font-family: '1';
+  }
+
+    dl{
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    .bar{
+      font-size: 1rem;
+    }
+    img.image{
+      height: 8rem;
+      width: 11rem;
+    }
+
+    .charge{
+      font-size: 2rem;
+    }
+    .power{
+      font-size: 2rem;
+    }  
+    .hour{
+      font-size: 2rem;
+    }  
+
+    .mood{
+      font-size: 2rem;
+    }
+
+    .spot-box {
+      position: relative;
+      margin: 2em 0;
+      padding: 25px 10px 7px;
+      border: solid 2px brown;
+    }
+    .spot-box .title {
+      position: absolute;
+      display: inline-block;
+      top: -2px;
+      left: -2px;
+      padding: 0 9px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 17px;
+      background: brown;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .spot-box p {
+      margin: 0; 
+      padding: 0;
+    }
+
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: '1';
+      }
+ 
+
+// ----------------------------------------------------------------
+
+
+
+.footer{
+  height: 4rem;
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  float: left;
+  bottom: 0rem;
+}
+  
+  .footer i{
+      color: white;
+      font-family: '1';
+      font-size: 1.2rem;
+   }
