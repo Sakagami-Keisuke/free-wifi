@@ -102,7 +102,7 @@
                             // マップオプションを変数に格納
           var mymapOptions = {
             zoom : 15,                 // 拡大倍率
-            center : {lat: 33.592954,lng: 130.404864},   // myLatLng,    // 緯度・経度
+            center : {lat: 33.592954,lng: 130.404864},   // myLatLng,   // 緯度・経度
             maxZoom:20,                // 最大ズームの設定
             minZoom: 14,               // 最小ズームの設定
             scaleControl:true,         // 距離スケール表示
@@ -117,7 +117,7 @@
  
       // ========== 以下が現在位置Circleのコード ==========
       circleOptions = {
-        center : {lat: 33.592954,lng: 130.404864} ,    //myLatLng,  // 緯度・経度
+        center : {lat: 33.592954,lng: 130.404864},   // myLatLng,   // 緯度・経度
         clickable: true,          // クリックできるようにする
         draggable: false,         // ドラッグできないようにする
         zIndex:5,                 // 前面表示の度合い
@@ -189,6 +189,3 @@
 
 
 
- //Geolocation APIを使って現在地を取得しているページは、全てhttpsで接続できるようにする必要がある。
- //大ざっぱには、SSL（TLS）のためのサーバ証明書を取得してWebサーバやロードバランサーなどにセットアップし、
- //さらに設定やプログラムコードを適宜修正して、httpsで通信できるようにしなければならない。
