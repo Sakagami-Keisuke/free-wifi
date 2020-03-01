@@ -20,11 +20,14 @@
   %img.wifi{:src => "/wifi.png"}/
 
   .box
-
+    
     = link_to 'データ新規入力', new_spot_path
 
-  -# %a{:href => edit_user_path(current_user)} 
-  -#   %img.github{ :src => "/github.png"}/
+  -# %a{:href => new_spot_path} データ新規入力
+
+
+  %a{:href => edit_user_path(current_user)} 
+    %img.github{ :src => "/github.png"}/
     
  
 

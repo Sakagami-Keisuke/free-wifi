@@ -137,7 +137,7 @@
             marker[i] = new google.maps.Marker({ 
               position: markerLatLng, 
               map: map,                 // 表示先の地図の種類
-              animation: google.maps.Animation.BOUNCE,   // アイコンの動き DROP
+              animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
               clickable: true,          // クリックできるようにする
               draggable: false,         // ドラッグできないようにする
               zIndex:5,                 // 前面表示の度合い
