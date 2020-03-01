@@ -1,0 +1,10 @@
+.form
+  = form_for @spot do |form|
+    投稿する
+    = form.text_field :name, placeholder: "name"
+    = form.text_field :address, placeholder: "address"
+    = form.text_area :price, placeholder: "price"
+    = form.text_field :mood, placeholder: ":mood"
+    = form.text_field :Lat, placeholder: "Lat"
+    = form.text_area :Lng, placeholder: "Lng"
+    = form.submit "SEND"
