@@ -53,23 +53,23 @@
 
 *言語・使用技術*
 ------------------
-フロント
-Haml
-Scss
-JavaScript
-
-バックエンド
-ruby 2.5.1
-Ruby on Rails 5.0.7.2
-サーバー
-
-DB
-mysql  Ver 14.14
-
-インフラ・開発環境等（予定）
-Docker/docker-compose
-AWS（VPC, EC2, S3, Route 53, ALB, ACM）
-CircleCI（CI/CD)
-Capistrano3
-RSpec
-
+●フロント  
+Haml  
+Scss  
+JavaScript  
+  
+●バックエンド  
+ruby 2.5.1  
+Ruby on Rails 5.0.7.2  
+  
+●サーバー  
+  
+●DB  
+mysql  Ver 14.14  
+  
+●インフラ・開発環境等（予定）  
+Docker/docker-compose  
+AWS（VPC, EC2, S3, Route 53, ALB, ACM）  
+CircleCI（CI/CD)  
+Capistrano3  
+RSpec  
