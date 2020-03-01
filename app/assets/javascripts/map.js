@@ -1,4 +1,3 @@
-
 // ============マーカー配列を空、吹き出し配列を空、マーカーデータ配列に直接入力=============  
 
   var marker = [];
@@ -101,10 +100,10 @@
           var myLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                             // マップオプションを変数に格納
           var mymapOptions = {
-            zoom : 15,                 // 拡大倍率
-            center : {lat: 33.592954,lng: 130.404864},   // myLatLng,   // 緯度・経度
+            zoom : 16,                 // 拡大倍率
+            center : { lat: 33.592954,lng: 130.404864 },     // myLatLng, // 緯度・経度
             maxZoom:20,                // 最大ズームの設定
-            minZoom: 14,               // 最小ズームの設定
+            minZoom: 15,               // 最小ズームの設定
             scaleControl:true,         // 距離スケール表示
           };
 
@@ -117,7 +116,7 @@
  
       // ========== 以下が現在位置Circleのコード ==========
       circleOptions = {
-        center : {lat: 33.592954,lng: 130.404864},   // myLatLng,   // 緯度・経度
+        center :{ lat: 33.592954,lng: 130.404864 }, // myLatLng,  // 緯度・経度
         clickable: true,          // クリックできるようにする
         draggable: false,         // ドラッグできないようにする
         zIndex:5,                 // 前面表示の度合い
@@ -138,7 +137,7 @@
             marker[i] = new google.maps.Marker({ 
               position: markerLatLng, 
               map: map,                 // 表示先の地図の種類
-              animation: google.maps.Animation.DROP,   // アイコンの動き DROP  BOUNCE
+              animation: google.maps.Animation.DROP,   // アイコンの動き DROP BOUNCE
               clickable: true,          // クリックできるようにする
               draggable: false,         // ドラッグできないようにする
               zIndex:5,                 // 前面表示の度合い
@@ -185,6 +184,7 @@
     };
 
 }
+
 
 
 

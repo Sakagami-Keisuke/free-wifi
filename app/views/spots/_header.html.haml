@@ -1,7 +1,7 @@
 
 .header
   .title
-    %a{:href => "root_path"}For NomaDist
+    %a{ :href => root_path }For NomaDist
   .subtitle 2020年版 ノマド向けフリーWiFiスポット情報アプリ
   
   .menu
@@ -20,8 +20,11 @@
   %img.wifi{:src => "/wifi.png"}/
 
   .box
+    
+    = link_to 'データ新規入力', new_spot_path
 
-    -# = link_to 'アカウント編集', edit_user_path(current_user)
+  -# %a{:href => new_spot_path} データ新規入力
+
 
   %a{:href => edit_user_path(current_user)} 
     %img.github{ :src => "/github.png"}/
