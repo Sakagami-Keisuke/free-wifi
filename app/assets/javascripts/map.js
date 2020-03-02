@@ -4,46 +4,54 @@
   var infoWindow = [];
   var markerData = [ 
       {
-      name: 'TECH::EXPERT福岡<br><img src="/demo0.jpg"class=image >" ',
+      name: 'テックキャンプ中洲校<br><img src="/demo0.jpg"class=image >" ',
       lat: 33.592954,
       lng: 130.404864,
       }, {
-      name: '[無料]エンジニアカフェ（天神）<br><img src="/demo1.jpg"class=image > ',
+      name: '[無料]エンジニアカフェ<br><img src="/demo1.jpg"class=image > ',
       lat: 33.593152,
       lng: 130.401884
       }, {
-      name: '[無料]スタートアップカフェ（大名）<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.589162,
-      lng: 130.395307
+      name: '[有料]カフェベローチェ<br><img src="/demo22.jpg"class=image > ',
+      lat: 33.592187,
+      lng: 130.399474
       }, {
-      name: '[有料]プロント新天神町店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.590126,
-      lng: 130.398116
+      name: '[有料]BOOK & CO. <br><img src="/demo30.jpg"class=image > ',
+      lat: 33.593852,
+      lng: 130.39835
       }, {
-      name: '[有料]コーデュロイカフェパルコ店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.59012,
-      lng: 130.398116
+      name: '[有料] タリーズ 天神店 <br><img src="/demo40.jpg"class=image > ',
+      lat: 33.591618,
+      lng: 130.396871
+      },{
+      name: '[有料] タリーズ 新天町店 <br><img src="/demo50.jpg"class=image > ',
+      lat: 33.590074,
+      lng: 130.397071
+      }, {
+      name: '[有料]スタバ 天神VIORO店<br><img src="/demo60.jpg"class=image > ',
+      lat: 33.589645 ,
+      lng: 130.398415
+      },{
+      name: '[有料]スタバ メディアモール天神 <br><img src="/demo70.jpg"class=image > ',
+      lat: 33.590907,
+      lng: 130.400564
+      },{
+      name: '[有料]コメダ天神南店 <br><img src="/demo80.jpg"class=image > ',
+      lat: 33.589295,
+      lng: 130.403634
+      },{
+      name: '[有料]スタバ天神地下街店<br><img src="/demo90.jpg"class=image > ',
+      lat: 33.588061,
+      lng: 130.401138
+      }, {
+      name: '[有料]エスプレッサメンテ <br><img src="/demo100.jpg"class=image > ',
+      lat: 33.591907 ,
+      lng: 130.398294
       }, {
       name: '[有料]SIROUZU COFFE警固店 <br><img src="/demo1.jpg"class=image > ',
       lat: 33.584114,
       lng: 130.390572
-      }, {
-      name: '[有料]タリーズコーヒー新天神店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.590074,
-      lng: 130.39707
-      }, {
-      name: '[有料]シアトルズベスト天神昭和通店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.592324,
-      lng: 130.397139
-      }, {
-      name: '[有料]スタバ メディアモール天神 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.590907,
-      lng: 130.400564
-      }, {
-      name: '[有料]コメダ珈琲店 福岡天神南店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.589295,
-      lng: 130.403634
-      }, {
+      },{
       name: '[有料]VITO中洲ゲイツ店 <br><img src="/demo1.jpg"class=image > ',
       lat: 33.593775,
       lng: 130.406223
@@ -51,11 +59,7 @@
       name: '[有料]福岡天狼院（今泉）<br><img src="/demo1.jpg"class=image > ',
       lat: 33.585459,
       lng: 130.400186
-      }, {
-      name: '[有料]スタバ天神地下街店<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.588061,
-      lng: 130.401138
-      }, {
+      },{
       name: '[有料]マクド キャナルシティ博多店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.58956,
       lng: 130.411763
@@ -67,16 +71,8 @@
       name: '[有料]サブウェイ 天神ロフト店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.58695 ,
       lng: 130.401579
-      }, {
-      name: '[有料]BOOK & CO.<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.593852 ,
-      lng: 130.39835
-      }, {
+      },{
       name: '[有料]黒猫屋珈琲店<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.585335 ,
-      lng: 130.391875
-      }, {
-      name: '[有料]スタバ天神ソラリア地下1階店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.585335 ,
       lng: 130.391875
       }
