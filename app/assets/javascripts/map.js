@@ -47,15 +47,23 @@
       name: '[有料]エスプレッサメンテ <br><img src="/demo100.jpg"class=image > ',
       lat: 33.591907 ,
       lng: 130.398294
-      }, {
-      name: '[有料]SIROUZU COFFE警固店 <br><img src="/demo1.jpg"class=image > ',
-      lat: 33.584114,
-      lng: 130.390572
       },{
-      name: '[有料]VITO中洲ゲイツ店 <br><img src="/demo1.jpg"class=image > ',
+      name: '[有料]VITO中洲ゲイツ店 <br><img src="/demo141.jpg"class=image > ',
       lat: 33.593775,
       lng: 130.406223
       }, {
+      name: '[有料]MUJI 天神大名<br><img src="/demo110.jpg"class=image > ',
+      lat: 33.587337,
+      lng: 130.396749
+      },  {
+      name: '[有料]スタバ天神西通店<br><img src="/demo120.jpg"class=image > ',
+      lat: 33.587888,
+      lng: 130.396641
+      }, {
+      name: '[無料]福岡市 スタートアップカフェ<br><img src="/demo130.jpg"class=image > ',
+      lat: 33.589162 ,
+      lng: 130.395307
+      },{
       name: '[有料]福岡天狼院（今泉）<br><img src="/demo1.jpg"class=image > ',
       lat: 33.585459,
       lng: 130.400186
@@ -63,11 +71,7 @@
       name: '[有料]マクド キャナルシティ博多店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.58956,
       lng: 130.411763
-      }, {
-      name: '[有料]MUJIカフェ 無印良品 (大名)<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.587337,
-      lng: 130.396749
-      }, {
+      },{
       name: '[有料]サブウェイ 天神ロフト店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.58695 ,
       lng: 130.401579
@@ -75,7 +79,11 @@
       name: '[有料]黒猫屋珈琲店<br><img src="/demo1.jpg"class=image > ',
       lat: 33.585335 ,
       lng: 130.391875
-      }
+      }, {
+        name: '[有料]SIROUZU COFFE警固店 <br><img src="/demo1.jpg"class=image > ',
+        lat: 33.584114,
+        lng: 130.390572
+        }
 
 
   ];  
