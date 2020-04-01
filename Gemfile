@@ -57,3 +57,5 @@ gem 'haml-rails'
 gem 'geocoder'
 
 gem 'devise'
+
+gem 'dotenv-rails'

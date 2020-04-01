@@ -2,7 +2,7 @@
 
 
 
-%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkWxy5B306z7lqHjbVdWbPyHWSSUlJTmY&callback=initMap"}
+%script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV['API_KEY']}&callback=initMap"}
 :css
   #map{
     height: calc( 100vh - 200px);

@@ -4,86 +4,74 @@
   var infoWindow = [];
   var markerData = [ 
       {
-      name: 'テックキャンプ中洲校<br><img src="/demo0.jpg"class=image >" ',
-      lat: 33.592954,
-      lng: 130.404864,
-      }, {
-      name: '[無料]エンジニアカフェ<br><img src="/demo1.jpg"class=image > ',
+      name: 'エンジニアカフェ<br>	<a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エンジニアカフェ&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo1.jpg"class=image > ',
       lat: 33.593152,
       lng: 130.401884
       }, {
-      name: '[有料]カフェベローチェ<br><img src="/demo22.jpg"class=image > ',
+      name: 'カフェベローチェ<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=カフェベローチェ&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo22.jpg"class=image > ',
       lat: 33.592187,
       lng: 130.399474
       }, {
-      name: '[有料]BOOK & CO. <br><img src="/demo30.jpg"class=image > ',
+      name: 'BOOK & CO. <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=ブックアンドコー&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo30.jpg"class=image > ',
       lat: 33.593852,
       lng: 130.39835
       }, {
-      name: '[有料] タリーズ 天神店 <br><img src="/demo40.jpg"class=image > ',
+      name: 'タリーズ 天神店 <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ天神店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo40.jpg"class=image > ',
       lat: 33.591618,
       lng: 130.396871
       },{
-      name: '[有料] タリーズ 新天町店 <br><img src="/demo50.jpg"class=image > ',
+      name: 'タリーズ 新天町店 <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=タリーズ新天町店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo50.jpg"class=image > ',
       lat: 33.590074,
       lng: 130.397071
       }, {
-      name: '[有料]スタバ 天神VIORO店<br><img src="/demo60.jpg"class=image > ',
+      name: 'スタバ 天神VIORO店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神VIORO店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo60.jpg"class=image > ',
       lat: 33.589645 ,
       lng: 130.398415
       },{
-      name: '[有料]スタバ メディアモール天神 <br><img src="/demo70.jpg"class=image > ',
+      name: 'スタバ メディアモール天神 <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバメディアモール天神&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo70.jpg"class=image > ',
       lat: 33.590907,
       lng: 130.400564
       },{
-      name: '[有料]コメダ天神南店 <br><img src="/demo80.jpg"class=image > ',
+      name: 'コメダ天神南店 <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=コメダ天神南店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo80.jpg"class=image > ',
       lat: 33.589295,
       lng: 130.403634
       },{
-      name: '[有料]スタバ天神地下街店<br><img src="/demo90.jpg"class=image > ',
+      name: 'スタバ天神地下街店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神地下街店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo90.jpg"class=image > ',
       lat: 33.588061,
       lng: 130.401138
       }, {
-      name: '[有料]エスプレッサメンテ <br><img src="/demo100.jpg"class=image > ',
+      name: 'エスプレッサメンテ <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=エスプレッサメンテ&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo100.jpg"class=image > ',
       lat: 33.591907 ,
       lng: 130.398294
       },{
-      name: '[有料]VITO中洲ゲイツ店 <br><img src="/demo141.jpg"class=image > ',
+      name: 'VITO中洲ゲイツ店 <br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=VITO中洲ゲイツ店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo141.jpg"class=image > ',
       lat: 33.593775,
       lng: 130.406223
       }, {
-      name: '[有料]MUJI 天神大名<br><img src="/demo110.jpg"class=image > ',
+      name: 'MUJI 天神大名<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=MUJI天神大名&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo110.jpg"class=image > ',
       lat: 33.587337,
       lng: 130.396749
       },  {
-      name: '[有料]スタバ天神西通店<br><img src="/demo120.jpg"class=image > ',
+      name: 'スタバ天神西通店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタバ天神西通店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo120.jpg"class=image > ',
       lat: 33.587888,
       lng: 130.396641
       }, {
-      name: '[無料]福岡市 スタートアップカフェ<br><img src="/demo130.jpg"class=image > ',
+      name: '福岡市 スタートアップカフェ<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=スタートアップカフェ&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo130.jpg"class=image > ',
       lat: 33.589162 ,
       lng: 130.395307
       },{
-      name: '[有料]福岡天狼院（今泉）<br><img src="/demo1.jpg"class=image > ',
-      lat: 33.585459,
-      lng: 130.400186
-      },{
-      name: '[有料]マクド キャナルシティ博多店<br><img src="/demo1.jpg"class=image > ',
+      name: 'マクド キャナルシティ博多店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=マクドナルドキャナルシティ博多店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo1.jpg"class=image > ',
       lat: 33.58956,
       lng: 130.411763
       },{
-      name: '[有料]サブウェイ 天神ロフト店<br><img src="/demo1.jpg"class=image > ',
+      name: 'サブウェイ 天神ロフト店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=サブウェイ天神ロフト店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo1.jpg"class=image > ',
       lat: 33.58695 ,
       lng: 130.401579
       },{
-      name: '[有料]黒猫屋珈琲店<br><img src="/demo1.jpg"class=image > ',
+      name: '黒猫屋珈琲店<br><a href="https://maps.google.com/maps?saddr=33.588689,130.399967&daddr=黒猫屋珈琲店&dirflg=w" target="_blank">ルート案内</a><br><img src="/demo1.jpg"class=image > ',
       lat: 33.585335 ,
       lng: 130.391875
-      }, {
-        name: '[有料]SIROUZU COFFE警固店 <br><img src="/demo1.jpg"class=image > ',
-        lat: 33.584114,
-        lng: 130.390572
-        }
+      }
 
 
   ];  
@@ -105,7 +93,7 @@
                             // マップオプションを変数に格納
           var mymapOptions = {
             zoom : 16,                 // 拡大倍率
-            center : { lat: 33.592954,lng: 130.404864 },     // myLatLng, // 緯度・経度
+            center : { lat: 33.588689,lng: 130.399967 },     // myLatLng, // 緯度・経度
             maxZoom:20,                // 最大ズームの設定
             minZoom: 15,               // 最小ズームの設定
             scaleControl:true,         // 距離スケール表示
@@ -120,7 +108,7 @@
  
       // ========== 以下が現在位置Circleのコード ==========
       circleOptions = {
-        center :{ lat: 33.592954,lng: 130.404864 }, // myLatLng,  // 緯度・経度
+        center :{ lat: 33.588689,lng: 130.399967 }, // myLatLng,  // 緯度・経度
         clickable: true,          // クリックできるようにする
         draggable: false,         // ドラッグできないようにする
         zIndex:5,                 // 前面表示の度合い
@@ -148,7 +136,7 @@
               });
 
               infoWindow[i] = new google.maps.InfoWindow({ 
-                content: '<div class="sample">' + markerData[i]['name'] + '</div>' 
+                content: "<p style='width:120px; font-size:10px; text-align:center;'>" + markerData[i]['name'] + '</div>' 
               });
               markerEvent(i); 
           }
