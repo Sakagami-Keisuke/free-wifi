@@ -1,7 +1,5 @@
 .main
 
-
-
 %script{:async => "", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV['API_KEY']}&callback=initMap"}
 :css
   #map{
@@ -10,26 +8,19 @@
     float: right;
     position:absolute;
     top:150px;
-    left:400px;
-  
+    left:400px; 
   }
   .image{
     height:6rem;
-    width:7rem;
-    
+    width:7rem;    
   }
 
     .sample {
      font-family: '1';  
     }
 
-
-
-
-
 #map
 :javascript
-
 
 %body
   %script{:src => "map.js"}
